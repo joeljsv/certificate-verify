@@ -1,0 +1,41 @@
+<div class="container">
+   
+    <div class="service-card" style="background-color: white;">
+        <h2 class="h6 section-title underline" ><%if(users){%>
+          Verified
+        <%}else{%>
+          No Certificates Found
+        <%}%></h2>
+
+
+        <%if(users){%>
+<ul style="max-width: max-content;
+margin-inline: auto;">
+    <% Object.keys(users).forEach(function(key) { %>
+    <li>
+      <div class="service-list" >
+        <h4 class="h4 title "><%= key %></h4> 
+        <p class="text ">:</p>
+          <p class="text ">
+           <%= users[key] %>
+          </p>
+        </div>
+    </li>
+           
+     <% }); %>
+
+     
+      
+         <li>
+          <div class="section-title bttn">
+            <button class="btn">
+              <a href="<%=url%>" style="color: white">Downlod</a>
+            </button>
+          </div>
+         </li>
+       
+  </ul>
+        <%}%>
+
+    </div>
+  </div>

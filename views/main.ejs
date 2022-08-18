@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <%- include('./layout/head'); %>
+</head>
+
+  <body id="top">
+ <header class="header" data-header>
+    <%- include('./layout/header'); %>
+</header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container">
+                <%- include('./body',{users:users,url:link}); %>
+  
+              
+            </div>
+          </section>
+           
+            <!-- End -->
+     
+    </main>
+    <%- include('./layout/footer'); %>
