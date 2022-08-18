@@ -26,7 +26,7 @@ async function getCertDetail(sheetID, docID) {
 
     return certificateDateil;
   } catch (err) {
-    console.log(err);
+    throw err;
   }
 }
 
